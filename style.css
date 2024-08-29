@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: bordeer-box;
+    font-family:'poppins',
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 105);
+    color: aliceblue;
+}
+
+nav a{
+    color: rgb(210, 138, 228);
+    margin:0 23px;
+}
+
+nav{
+    height: 50px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+}
+
+.left{
+    font-size: large;
+    font-style: italic;
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0;
+}
+
+.firstsection >div{
+    width: 40%;
+}
+
+.leftsection{
+    margin: 30px;
+    font-size: 3rem;
+            
+}
+
+.rightsection img{
+         border-radius: 40%;    
+}
+
+.orange{
+    color: rgb(245, 121, 121);
+}
+
+#element{
+    color: rgb(221, 98, 221);
+}
+
+#about{
+    padding: 80px 10px;
+    color: rgb(221, 156, 92);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 20%;
+}
+
+.about-col-1 img{
+    width: 80%;
+    border-radius: 50%;
+
+
+}
+
+.about-col-2{
+    flex-basis:70% ;
+}
+
+.about-col-2 span{
+    color: rgba(207, 74, 141, 0.834);
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor:pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background: rgb(186, 223, 112);
+    position:absolute;
+    left:0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 90% ;
+}
+
+.tab-contents ul li{
+    list-style:circle;;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: rgba(183, 213, 123, 0.934);
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.main-text{
+    padding: 30px;
+    text-align: center;
+}
+
+.main-text h2{
+    color: rgb(173, 199, 238);
+    padding-bottom: 19px;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+.portfolio-content{
+    display: flex;
+}
+.rows{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.rows img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius:10px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 30;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(202, 129, 236);
+    background: transparent;
+    border-radius: 50px;
+    border: 3px solid rgb(228, 88, 88);
+    text-decoration:none; 
+}   
+.resume-button:hover {
+    background-color: #5f77e3; /* Customize hover color */
+}
+
+
+.github-button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 30;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(202, 129, 236);
+    background: transparent;
+    border-radius: 50px;
+    border: 3px solid rgb(228, 88, 88);
+    text-decoration:none; 
+}
+
+.github-button:hover{
+    background-color: #5f77e3;
+}
+
+.contact-left{
+   flex-basis: 35%;
+}
+
+.contact-right{
+    margin-top: 40px;
+    flex-basis: 60%;
+}
+
+
+.contact-left h1{
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(248, 141, 175);
+    padding-bottom: 19px;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-left p{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px; 
+    margin-top:20px;
+    display: inline-block;
+}
+
+.formsubmit-button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 30;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(202, 129, 236);
+    background: transparent;
+    border-radius: 50px;
+    border: 3px solid rgb(228, 88, 88);
+    text-decoration:none; 
+}
+
+.formsubmit-button:hover{
+    background-color: #5f77e3;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input,form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: rgb(202, 129, 236);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    background: #5f77e3;
+    font-weight: 400;
+}
